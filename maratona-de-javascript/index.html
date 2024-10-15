@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratona de Javascript</title>
+
+    <script src="./variaveis-e-op-matematicas/js/script.js"></script>
+</head>
+<body>
+    <style>
+      
+       h1{
+        text-align: center;
+       }
+
+       .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+    </style>
+
+    <h1>Variáveis e Operações Matemáticas</h1>
+
+    <!--Crie um programa que peça ao usuário um valor em graus Celsius e converta para Fahrenheit. -->
+      
+    <div class="container">
+        <h2>Conversão de Celsius para Fahrenheit </h2>
+        
+        <label for="celsius"> Graus Celsius:</label>
+        <input type="number" id="celsius" name="celsius">
+        <button onclick="convertToFahrenheit()">Converter</button>
+        <p id="result1"></p>
+    </div>
+
+    <hr>
+
+
+    <!--Solicite ao usuário a base e a altura de um triângulo e calcule sua área. -->
+    <div class="container">
+        <h2>Cálculo de área de um triângulo</h2>
+        
+        <label for="base">Digite a base do triângulo</label>
+        <input type="number" id="base" name="base">
+        
+        <label for="altura">Digite a altura do triângulo:</label>
+        <input type="number" id="altura" name="altura">
+        <button onclick="calculoArea()">Calcular</button>
+        <p id="result2"></p>
+    </div>
+
+    <hr>
+
+    <!--Peça ao usuário um número e exiba o seu quadrado e seu cubo. -->
+    <div class="container">
+        <h2>Quadrado e cubo de um número</h2>
+       
+        <label for="num1">Digite um número</label>
+        <input type="number" id="num1" name="num1">
+        <button onclick="calculo()">Calcular</button>
+        <p id="result3"></p>
+
+    </div>
+
+    <hr>
+
+    <!-- Solicite dois números ao usuário e exiba a potência do primeiro número elevado ao segundo.-->
+    <div class="container">
+        <h2>Calculadora de Potência</h2>
+        <label for="num2">Digite um número</label>
+        <input type="number" id="num2" name="num2">
+        
+        <label for="num3">Digite um segundo número</label>
+        <input type="number" id="num3" name="num3">
+        <button onclick="potencia()">Calcular</button>
+        <p id="result4"></p>
+    </div>
+
+    <hr>
+
+    <h1>Condicionais</h1>
+
+    <!--Escreva um programa que peça ao usuário um número e informe se ele está entre 1 e 100. -->
+    <div class="container">
+        <h2>Verificando se um número está entre 0 e 100</h2>
+        <label for="num4">Digite um número</label>
+        <input type="number" id="num4" name="num4">
+        <button onclick="num0E100()">Calcular</button>
+        <p id="result5"></p>
+    </div>
+
+    <hr>
+
+    <!-- Implemente uma função que recebe a idade de uma pessoa e retorna uma mensagem informando 
+     se ela é criança, adolescente ou adulta.-->
+     <div class="container">
+        <h2> Verifique se voce é criança, adolescente ou adulta</h2>
+        <label for="idade">Digite sua iade</label>
+        <input type="number" id="idade" name="idade">
+        <button onclick="faixaEtaria()">Calcular</button>
+        <p id="result6"></p>
+    </div>
+    
+    <hr>
+
+    <!-- Crie um programa que solicite um mês (de 1 a 12) e informe quantos dias esse mês possui.-->
+     <div class="container">
+        <h2>Quantos dias tem cada mês?</h2>
+        <label for="mes">Digite um mês entre 1 e 12</label>
+        <input type="number" id="mes" name="mes">
+        <button onclick="qdteDiasMes()">Calcular</button>
+        <p id="result7"></p>
+    </div>
+
+    <hr>
+
+    <!-- Escreva um programa que peça ao usuário um número e verifique se ele é 
+    positivo, negativo ou zero. -->
+    <div class="container">
+        <h2>Verificando se um numéro é positivo, negativo ou igual a zero</h2>
+        <label for="num5">Digite um número</label>
+        <input type="number" id="num5" name="num5">
+        <button onclick="verificarnum()">Calcular</button>
+        <p id="result8"></p>
+    </div>
+
+    <hr>
+    
+    <h1>Funções</h1>
+
+    <!-- Crie uma função que aceita dois números e retorna o resultado da divisão 
+    do primeiro pelo segundo. Lide com divisões por zero. -->
+    <div class="container">
+        <h2>Divisão</h2>
+        <label for="numA">Digite um número</label>
+        <input type="number" id="numA" name="numA">
+        <label for="numB">Digite um segundo número</label>
+        <input type="number" id="numB" name="numB">
+        <button onclick="divisao()">Calcular</button>
+        <p id="result9"></p>
+    </div>
+
+    <hr>
+
+        <!-- Escreva uma função que recebe uma lista de strings e retorna a lista 
+        ordenada em ordem alfabética. -->
+    <div class="container">
+        <h2>Ordenar lista por ordem alfabética</h2>
+        <label for="list">Digite as palavras  separadas por vírgula:</label>
+        <input type="text" id="list" name="list">
+        <button onclick="ordenarLista()">Ordenar</button>
+        <p id="result10"></p>
+    </div>
+
+    <hr>
+
+        <!-- Escreva uma função que aceita um array de inteiros e retorna o maior número 
+         presente.-->
+    <div class="container">
+        <h2>Seleção do maior número</h2>
+        <label for="numInt">Digite os números separadas por vírgula:</label>
+        <input type="number" id="numInt" name="numInt">
+        <button onclick="maiorNum()">Ordenar</button>
+        <p id="result11"></p>
+    </div>
+
+    <hr>
+
+        <!-- Implemente uma função que recebe uma string e retorna a mesma string 
+      invertida. -->
+    <div class="container">
+        <h2>Palavra invertida</h2>
+        <label for="palavraInvert">Digite uma palavras:</label>
+        <input type="text" id="palavraInvert" name="palavraInvert">
+        <button onclick="invertPalavra()">Inverter</button>
+        <p id="result12"></p>
+    </div>
+
+    <hr>
+
+        <h1>Laços</h1>
+        
+        <!--Escreva um programa que imprima todos os números ímpares de 1 a 100. -->
+    <div class="container">
+        <h2>Números ímpares de 1 a 100</h2>
+        <button onclick="numImpares()"> Mostrar Números Ímpares</button>
+        <p id="result13"></p>
+    </div>
+
+    <hr>
+        <!-- Escreva um programa que imprima todos os números de 1 a 50 e indique quais 
+        são múltiplos de 5. -->
+    <div class="container">
+        <h2>Números de 1 a 50 e Múltiplos de 5</h2>
+        <button onclick="imprimirNumeros()">Mostrar mútiplos de 5</button>
+        <p id="result14"></p>
+    </div>
+
+    <hr>
+
+        <!--Faça um programa que peça um número ao usuário e calcule a soma de todos 
+        os números de 1 até esse número.-->
+    <div class="container">
+        <h2>Soma</h2>
+        <label for="num6">Digite um número</label>
+        <input type="number" id="num6" name="num6">
+        <button onclick="calculoSoma()">Calcular</button>
+        <p id="result15"></p>
+    </div>
+
+    <hr>
+
+         <h1>Manipulação de Objetos</h1>
+
+        <!--Crie um array de objetos "Produto" e escreva uma função que calcule o valor total em estoque. -->
+    <div class="container">
+        <h2>Valor do Estoque</h2>
+        <button onclick="valorTotalEstoque()"> Calcular Valor Total</button>
+        <p id="result16"></p>
+    </div>
+
+    <hr>
+ 
+</body>
+</html>
